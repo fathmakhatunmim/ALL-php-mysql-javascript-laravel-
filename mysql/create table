@@ -1,0 +1,30 @@
+
+CREATE TABLE City(
+    cid Int NOT NULL AUTO_INCREMENT,
+    cityname varchar(50) Not NUll,
+    PRIMARY KEY (cid)
+);
+
+INSERT INTO city(Cityname) VALUES('agra'),
+('delhi'),
+('Bhopal'),
+('jaipur'),
+('noida')
+;
+
+CREATE TABLE persona(
+id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(50) NOT NULL,
+    percentage INT NOT NULL,
+    age INT NOT NULL,
+    gender varchar(1) NOT NULL,
+    city INT NOT NULL,
+    PRIMARY KEY(id),
+    FOREIGN KEY (city) REFERENCES city(cid) );
+
+
+ INSERT INTO persona(name,percentage,age,gender,city)VALUES("ram kumar",45,19,"m",1),
+('sarita kumari',55,22,"F",2),
+("salam Khan",62,20,"M",1),
+("juhi chawla",47,18,"F",3),
+("shahid kapoor",52,20,"m",1);   

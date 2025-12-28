@@ -1,0 +1,5 @@
+INSERT INTO a (name, roll, age)VALUES ('fathma', 20104002, 24);
+
+INSERT INTO a (name, roll, age)VALUES ('ava', 20104003, 25);
+
+INSERT INTO a (name, roll, age)VALUES ('bilkis', 20104004, 24);

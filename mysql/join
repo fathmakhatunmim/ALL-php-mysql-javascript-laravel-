@@ -1,0 +1,16 @@
+SELECT * FROM city
+INNER JOIN persona 
+on city.cid=persona.city;
+
+
+SELECT name,city,cityname
+FROM persona
+INNER JOIN city
+on persona.city=city.cid;
+
+SELECT name,city,cityname
+FROM persona
+INNER JOIN city
+on persona.city=city.cid
+where cityname = "agra"
+ORDER BY name;
